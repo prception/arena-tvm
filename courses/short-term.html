@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Term Courses | Arena Animation</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Visual Effects -->
+    <div class="scanlines"></div>
+    <!-- <div class="vignette"></div> -->
+    <div class="particle-blur-overlay-2"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <div id="header-container"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="course-hero">
+            <div class="grid-overlay"></div>
+
+            <div class="hero-floating-shapes">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 course-hero-content">
+                        <div class="course-badge">
+                            <span class="dot"></span>
+                            <span>Quick Learning</span>
+                        </div>
+                        <h1 class="course-title">
+                            <span class="glitch-effect">Short Term</span><br>
+                            <span class="gradient-text">Courses</span>
+                        </h1>
+                        <p class="course-subtitle">
+                            Accelerate your career with our focused short-term programs.
+                            Learn specific skills quickly and get job-ready in weeks, not years.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="course-content-section">
+            <div class="container">
+                <!-- Main Content Row -->
+                <div class="row g-5 align-items-center mb-5">
+                    <div class="col-lg-6">
+                        <div class="content-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop"
+                                alt="Short Term Learning" class="content-main-image">
+                            <div class="image-accent-border"></div>
+                            <div class="image-glow"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <span class="section-label">About Short Term Courses</span>
+                        <h2 class="content-title">
+                            Fast-Track Your <span class="gradient-text">Creative Skills</span>
+                        </h2>
+                        <p class="content-text">
+                            Our short-term courses are designed for professionals looking to upskill, students seeking
+                            additional expertise, or anyone wanting to explore new creative fields without a long-term
+                            commitment.
+                        </p>
+                        <p class="content-text">
+                            Each program is carefully crafted to deliver maximum learning in minimum time. Get hands-on
+                            training with industry-standard software and build a portfolio of work that showcases your
+                            new abilities.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature Highlights -->
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="feature-highlight-card">
+                            <div class="feature-icon-box">
+                                <i class="ri-timer-flash-fill"></i>
+                            </div>
+                            <h4>Quick Duration</h4>
+                            <p>1-3 month focused programs</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-highlight-card">
+                            <div class="feature-icon-box">
+                                <i class="ri-focus-3-fill"></i>
+                            </div>
+                            <h4>Skill Focused</h4>
+                            <p>Master specific tools & techniques</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-highlight-card">
+                            <div class="feature-icon-box">
+                                <i class="ri-medal-fill"></i>
+                            </div>
+                            <h4>Certified</h4>
+                            <p>Industry-recognized certificates</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Content Row -->
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="content-image-wrapper secondary">
+                            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop"
+                                alt="Classroom Training" class="content-main-image">
+                            <div class="image-accent-border"></div>
+                            <div class="image-glow secondary"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <span class="section-label">Available Programs</span>
+                        <h2 class="content-title">
+                            Choose Your <span class="gradient-text">Learning Path</span>
+                        </h2>
+                        <p class="content-text">
+                            We offer short-term courses in Photoshop, Illustrator, After Effects, Premiere Pro, 3DS Max,
+                            Maya, and more. Whether you want to learn graphic design, video editing, or 3D modeling, we
+                            have a program for you.
+                        </p>
+                        <p class="content-text">
+                            Weekend and evening batches available for working professionals. Flexible scheduling ensures
+                            you can learn at your own pace without disrupting your work or studies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Software Section -->
+        <section class="software-section">
+            <div class="container">
+                <h2 class="software-section-title">
+                    Popular <span class="gradient-text">Short Courses</span>
+                </h2>
+
+                <div class="software-grid">
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-image-edit-fill"></i>
+                        </div>
+                        <h3 class="software-name">Photoshop</h3>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-pen-nib-fill"></i>
+                        </div>
+                        <h3 class="software-name">Illustrator</h3>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-magic-fill"></i>
+                        </div>
+                        <h3 class="software-name">After Effects</h3>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-film-fill"></i>
+                        </div>
+                        <h3 class="software-name">Premiere Pro</h3>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-box-3-fill"></i>
+                        </div>
+                        <h3 class="software-name">3DS Max</h3>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-blender-fill"></i>
+                        </div>
+                        <h3 class="software-name">Maya</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to <span class="gradient-text">Start Your Journey?</span></h2>
+                    <p class="cta-text">
+                        Join our short-term courses and upgrade your skills quickly. Contact us to find the perfect
+                        program for you.
+                    </p>
+                    <a href="../contact.html" class="btn-cta">
+                        <span>Enroll Now</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

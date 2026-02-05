@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Animation | Arena Animation</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Visual Effects -->
+    <div class="scanlines"></div>
+    <!-- <div class="vignette"></div> -->
+    <div class="particle-blur-overlay-2"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+    <div id="header-container"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="course-hero">
+            <div class="grid-overlay"></div>
+
+            <div class="hero-floating-shapes">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 course-hero-content">
+                        <div class="course-badge">
+                            <span class="dot"></span>
+                            <span>Career Program</span>
+                        </div>
+                        <h1 class="course-title">
+                            <span class="glitch-effect">Learn</span><br>
+                            <span class="gradient-text">2D Animation</span>
+                        </h1>
+                        <p class="course-subtitle">
+                            Master the art of traditional and digital 2D animation.
+                            Create captivating stories through motion at India's premier animation academy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="course-content-section">
+            <div class="container">
+                <!-- Main Content Row -->
+                <div class="row g-5 align-items-center mb-5">
+                    <div class="col-lg-6">
+                        <div class="content-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?q=80&w=800&auto=format&fit=crop"
+                                alt="2D Animation Workspace" class="content-main-image">
+                            <div class="image-accent-border"></div>
+                            <div class="image-glow"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <span class="section-label">About This Course</span>
+                        <h2 class="content-title">
+                            India's <span class="gradient-text">Best Animation Training</span> Academy
+                        </h2>
+                        <p class="content-text">
+                            Widely reputed as India's Best Animation Training Academy, Arena Animation offers
+                            up-to-date, career-enriching courses in Animation, VFX, Web and Graphic Design. The academy
+                            enjoys a long tradition of excellence and is the Top Digital Media College in India with a
+                            spectacular placement record.
+                        </p>
+                        <p class="content-text">
+                            With rich experience spanning 17 years, perceptive career counseling, broad learning
+                            resources, and earnest mentoring, Arena has endeared itself to students seeking the Best
+                            Graphic and Web Design Training to prepare students for rewarding careers.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature Highlights -->
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="feature-highlight-card">
+                            <div class="feature-icon-box">
+                                <i class="ri-award-fill"></i>
+                            </div>
+                            <h4>17+ Years</h4>
+                            <p>Of Excellence in Creative Education</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-highlight-card">
+                            <div class="feature-icon-box">
+                                <i class="ri-user-star-fill"></i>
+                            </div>
+                            <h4>Expert Faculty</h4>
+                            <p>Industry Professionals as Mentors</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-highlight-card">
+                            <div class="feature-icon-box">
+                                <i class="ri-briefcase-fill"></i>
+                            </div>
+                            <h4>100% Placement</h4>
+                            <p>Dedicated Placement Cell</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Content Row -->
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="content-image-wrapper secondary">
+                            <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=800&auto=format&fit=crop"
+                                alt="Creative Animation Process" class="content-main-image">
+                            <div class="image-accent-border"></div>
+                            <div class="image-glow secondary"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <span class="section-label">Why Choose Arena</span>
+                        <h2 class="content-title">
+                            The Perfect <span class="gradient-text">Platform</span> for Success
+                        </h2>
+                        <p class="content-text">
+                            Arena is a powerful platform for emerging talent in creative arts and has been setting the
+                            standards for Animation Colleges in Hyderabad and across the country for the last 15 years.
+                        </p>
+                        <p class="content-text">
+                            Take advantage of our advanced training infrastructure, eminently qualified faculty and our
+                            highly networked placement cell. Visit our global-standard facility, the largest-of-its-kind
+                            in India, for an insightful counseling session and take the first step towards a successful
+                            career! Arena is the perfect platform to launch your career and succeed in the real world.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Software Section -->
+        <section class="software-section">
+            <div class="container">
+                <h2 class="software-section-title">
+                    Softwares <span class="gradient-text">You'll Master</span>
+                </h2>
+
+                <div class="software-grid">
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-volume-up-fill"></i>
+                        </div>
+                        <h3 class="software-name">Adobe Audition</h3>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-film-fill"></i>
+                        </div>
+                        <h3 class="software-name">Adobe Premiere</h3>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-flashlight-fill"></i>
+                        </div>
+                        <h3 class="software-name">Adobe Flash Professional</h3>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-play-circle-fill"></i>
+                        </div>
+                        <h3 class="software-name">Adobe Animate</h3>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-code-s-slash-fill"></i>
+                        </div>
+                        <h3 class="software-name">ActionScript 3.0</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to <span class="gradient-text">Start Your Journey?</span></h2>
+                    <p class="cta-text">
+                        Join thousands of successful animators who launched their careers with Arena Animation.
+                    </p>
+                    <a href="../contact.html" class="btn-cta">
+                        <span>Enroll Now</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Development | Arena Animation</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Visual Effects -->
+    <div class="scanlines"></div>
+    <!-- <div class="vignette"></div> -->
+    <div class="particle-blur-overlay-2"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+    <div id="header-container"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="course-hero">
+            <div class="grid-overlay"></div>
+
+            <div class="hero-floating-shapes">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 course-hero-content">
+                        <div class="course-badge">
+                            <span class="dot"></span>
+                            <span>Career Program</span>
+                        </div>
+                        <h1 class="course-title">
+                            <span class="glitch-effect">Learn</span><br>
+                            <span class="gradient-text">Game Development</span>
+                        </h1>
+                        <p class="course-subtitle">
+                            Love gaming? You could create your own games using the latest software!
+                            Turn your passion into a profession with our comprehensive game development courses.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="course-content-section">
+            <div class="container">
+                <!-- Main Content Row -->
+                <div class="row g-5 align-items-center mb-5">
+                    <div class="col-lg-6">
+                        <div class="content-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b2b0f?q=80&w=800&auto=format&fit=crop"
+                                alt="Game Development Studio" class="content-main-image">
+                            <div class="image-accent-border"></div>
+                            <div class="image-glow"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <span class="section-label">About This Course</span>
+                        <h2 class="content-title">
+                            Transform Your <span class="gradient-text">Gaming Passion</span> Into a Career
+                        </h2>
+                        <p class="content-text">
+                            The gaming industry is one of the fastest-growing entertainment sectors worldwide, offering
+                            incredible career opportunities for creative individuals. Our Game Development program
+                            equips you with the skills to design, develop, and publish your own games.
+                        </p>
+                        <p class="content-text">
+                            From concept art to final deployment, learn every aspect of game creation including
+                            character design, environment modeling, game mechanics, level design, and interactive
+                            storytelling. Our industry-experienced faculty will guide you through hands-on projects that
+                            build your portfolio.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature Highlights -->
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="feature-highlight-card">
+                            <div class="feature-icon-box">
+                                <i class="ri-gamepad-fill"></i>
+                            </div>
+                            <h4>Game Art & Design</h4>
+                            <p>Create stunning visuals and immersive worlds</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-highlight-card">
+                            <div class="feature-icon-box">
+                                <i class="ri-code-box-fill"></i>
+                            </div>
+                            <h4>Game Programming</h4>
+                            <p>Learn coding for interactive gameplay</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-highlight-card">
+                            <div class="feature-icon-box">
+                                <i class="ri-vip-crown-fill"></i>
+                            </div>
+                            <h4>Industry Ready</h4>
+                            <p>Portfolio-based learning approach</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Content Row -->
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="content-image-wrapper secondary">
+                            <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=800&auto=format&fit=crop"
+                                alt="Gaming Setup" class="content-main-image">
+                            <div class="image-accent-border"></div>
+                            <div class="image-glow secondary"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <span class="section-label">Why Choose Arena</span>
+                        <h2 class="content-title">
+                            Build Games That <span class="gradient-text">Captivate Players</span>
+                        </h2>
+                        <p class="content-text">
+                            Master the art of game design with our comprehensive curriculum covering 2D and 3D game
+                            development, character animation, physics engines, AI programming, and multiplayer
+                            networking. Work on real projects that you can showcase to potential employers.
+                        </p>
+                        <p class="content-text">
+                            Our state-of-the-art gaming labs feature high-performance workstations, VR equipment, and
+                            the latest game development tools. Learn from industry veterans who have worked on AAA
+                            titles and indie games alike, bringing real-world experience to every lesson.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Third Content Row -->
+                <div class="row g-5 align-items-center mt-5">
+                    <div class="col-lg-6">
+                        <div class="content-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=800&auto=format&fit=crop"
+                                alt="Game Controller" class="content-main-image">
+                            <div class="image-accent-border"></div>
+                            <div class="image-glow"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <span class="section-label">Career Opportunities</span>
+                        <h2 class="content-title">
+                            Launch Your <span class="gradient-text">Gaming Career</span>
+                        </h2>
+                        <p class="content-text">
+                            The global gaming market is worth over $200 billion and continues to grow rapidly. Graduates
+                            can pursue careers as Game Designers, Level Designers, Game Artists, Game Programmers,
+                            Quality Assurance Testers, and Game Producers at leading studios worldwide.
+                        </p>
+                        <p class="content-text">
+                            Whether you dream of working at major studios like Ubisoft, EA, or Rockstar, or want to
+                            launch your own indie game studio, our program provides the foundation you need. Our
+                            placement cell connects you with top gaming companies actively seeking fresh talent.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Software Section -->
+        <section class="software-section">
+            <div class="container">
+                <h2 class="software-section-title">
+                    Programs <span class="gradient-text">You'll Master</span>
+                </h2>
+
+                <div class="software-grid">
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-palette-fill"></i>
+                        </div>
+                        <h3 class="software-name">Game Art & Design</h3>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-movie-2-fill"></i>
+                        </div>
+                        <h3 class="software-name">Digital Media Pro-3</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to <span class="gradient-text">Start Your Journey?</span></h2>
+                    <p class="cta-text">
+                        Join thousands of successful game developers who launched their careers with Arena Animation.
+                    </p>
+                    <a href="../contact.html" class="btn-cta">
+                        <span>Enroll Now</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

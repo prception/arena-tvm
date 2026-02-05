@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ==================================
+
+Designed under https://prception.in
+
+=====================================-->
+
+<!-- ==============================
+Designed and developed by
+- Mohammed Nihal 
+https://www.linkedin.com/in/m-nihal13
+https://github.com/mnihal-13
+
+================================ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Arena Animation - Leading Institute for Animation, VFX, Gaming, Web & Graphics Designing. Transform your creative passion into a successful career.">
+    <title>Arena Animation | Enter The Creative Universe</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Visual Effects Overlays -->
+    <div class="scanlines"></div>
+    <!-- <div class="vignette"></div> -->
+    <div class="particle-blur-overlay"></div>
+
+    <!-- Header Component Container -->
+    <div id="header-container"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <!-- Three.js Canvas -->
+        <canvas id="particleCanvas"></canvas>
+        <div class="particle-blur-overlay"></div>
+
+        <!-- Grid Overlay Effect -->
+        <div class="grid-overlay"></div>
+
+        <!-- Holographic Lines -->
+        <div class="holo-lines">
+            <div class="holo-line"></div>
+            <div class="holo-line"></div>
+            <div class="holo-line"></div>
+            <div class="holo-line"></div>
+        </div>
+
+        <!-- Floating Gaming Elements -->
+        <div class="floating-elements">
+            <div class="float-icon float-1"><i class="fas fa-gamepad"></i></div>
+            <div class="float-icon float-2"><i class="fas fa-film"></i></div>
+            <div class="float-icon float-3"><i class="fas fa-cube"></i></div>
+            <div class="float-icon float-4"><i class="fas fa-vr-cardboard"></i></div>
+            <div class="float-icon float-5"><i class="fas fa-palette"></i></div>
+            <div class="float-icon float-6"><i class="fas fa-code"></i></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="container hero-content">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-7">
+                    <!-- Badge -->
+                    <div class="hero-badge-container animate-on-scroll">
+                        <div class="hero-badge">
+                            <span class="badge-dot"></span>
+                            <span>Pioneers in Media Education</span>
+                        </div>
+                    </div>
+
+                    <!-- Main Title with Glitch Effect -->
+                    <h1 class="hero-title animate-on-scroll">
+                        <div class="title-line">
+                            <span class="glitch-text" data-text="ENTER THE">ENTER THE</span>
+                        </div>
+                        <div class="title-line">
+                            <span class="gradient-text">CREATIVE</span>
+                        </div>
+                        <div class="title-line">
+                            <span class="outline-text">UNIVERSE</span>
+                        </div>
+                    </h1>
+
+                    <!-- Description -->
+                    <p class="hero-description animate-on-scroll">
+                        Master the art of <span class="highlight">Animation</span>, <span class="highlight">VFX</span>,
+                        <span class="highlight">Gaming</span>, Web & Graphics Designing. Join the academy that has
+                        trained over <strong>450,000+ students</strong> globally and launched countless creative
+                        careers.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-buttons animate-on-scroll">
+                        <a href="#programs" class="btn-hero btn-primary-hero">
+                            <span>Explore Courses</span>
+                            <div class="btn-glow"></div>
+                        </a>
+                        <a href="#showreel" class="btn-hero btn-secondary-hero">
+                            <i class="fas fa-play me-2"></i>
+                            <span>Watch Showreel</span>
+                        </a>
+                    </div>
+
+                    <!-- Stats Panel -->
+                    <div class="stats-panel animate-on-scroll">
+                        <div class="stat-box">
+                            <div class="stat-number" data-count="25">0</div>
+                            <div class="stat-suffix">+</div>
+                            <div class="stat-label">Years of Excellence</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number" data-count="450">0</div>
+                            <div class="stat-suffix">K+</div>
+                            <div class="stat-label">Students Trained</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number" data-count="150">0</div>
+                            <div class="stat-suffix">+</div>
+                            <div class="stat-label">Centers Worldwide</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side - 3D Cards (Desktop Only) -->
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div class="hero-cards">
+                        <div class="card-3d card-1">
+                            <div class="card-icon"><i class="fas fa-film"></i></div>
+                            <div class="card-title">Animation</div>
+                            <div class="card-desc">2D & 3D Animation Mastery</div>
+                        </div>
+                        <div class="card-3d card-2">
+                            <div class="card-icon"><i class="fas fa-magic"></i></div>
+                            <div class="card-title">VFX</div>
+                            <div class="card-desc">Visual Effects for Film & TV</div>
+                        </div>
+                        <div class="card-3d card-3">
+                            <div class="card-icon"><i class="fas fa-gamepad"></i></div>
+                            <div class="card-title">Gaming</div>
+                            <div class="card-desc">Game Design & Development</div>
+                        </div>
+                        <div class="card-3d card-4">
+                            <div class="card-icon"><i class="fas fa-vr-cardboard"></i></div>
+                            <div class="card-title">AR/VR</div>
+                            <div class="card-desc">Immersive Experiences</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-box">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll to Explore</span>
+        </div>
+    </section>
+
+    <!-- Institute Introduction Section -->
+    <section id="about" class="institute-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <!-- Particle shape area on LEFT -->
+                <div class="col-lg-6 order-lg-1 order-2">
+                    <!-- Particle shape will form here (game controller) -->
+                    <div class="particle-shape-area" id="controllerShapeArea"></div>
+                </div>
+                <!-- Content on RIGHT -->
+                <div class="col-lg-6 order-lg-2 order-1">
+                    <div class="institute-content">
+                        <div class="hero-badge-container animate-on-scroll">
+                            <div class="hero-badge">
+                                <span class="badge-dot"></span>
+                                <span>About Arena Animation</span>
+                            </div>
+                        </div>
+                        <h2 class="institute-title animate-on-scroll">
+                            Shaping <span class="gradient-text">Creative Minds</span> Since 1996
+                        </h2>
+                        <p class="institute-description animate-on-scroll">
+                            Arena Animation is India's largest animation and multimedia training network.
+                            We empower students with industry-relevant skills in Animation, VFX, Gaming,
+                            Web Design, and Graphics to build successful creative careers.
+                        </p>
+                        <div class="institute-features animate-on-scroll">
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-award"></i></div>
+                                <div class="feature-text">
+                                    <h4>25+ Years</h4>
+                                    <p>Of Excellence in Creative Education</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-globe"></i></div>
+                                <div class="feature-text">
+                                    <h4>150+ Centers</h4>
+                                    <p>Across India & Worldwide</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-handshake"></i></div>
+                                <div class="feature-text">
+                                    <h4>Industry Connections</h4>
+                                    <p>Partnerships with Top Studios</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#programs" class="btn-hero btn-primary-hero animate-on-scroll">
+                            <span>View Our Programs</span>
+                            <div class="btn-glow"></div>
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Section - Coverflow Carousel -->
+    <section class="immersive-section">
+        <div class="background-typography">
+            <span class="bg-text-line text-begin">Begin </span>
+            <span class="bg-text-line text-top">A New</span>
+            <span class="bg-text-line text-middle">Creative</span>
+            <span class="bg-text-line text-bottom">Career</span>
+        </div>
+        <div class="container">
+
+            <div class="swiper course-swiper">
+                <div class="swiper-wrapper">
+
+
+                    <div class="swiper-slide">
+                        <div class="course-card">
+                            <img src="assets/img/courses/Gemini_Generated_Image_pk0kdwpk0kdwpk0k.png" alt="Graphics Designing">
+                            <!-- <div class="card-pill">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Mentor">
+                                <div class="pill-text"><span>Mentor</span><strong>Elena K.</strong></div>
+                            </div> -->
+                            <div class="card-glass-bar">
+                                <div class="glass-info"><span class="label">6 Months</span><span class="value">Graphics
+                                        Designing</span></div>
+                                <a href="courses/graphics-designing.html" class="glass-btn">MORE <i
+                                        class="ri-arrow-right-s-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="course-card">
+                            <img src="assets/img/courses/3d-animation.png" alt="3D Animation">
+                            <!-- <div class="card-pill">
+                                <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Mentor">
+                                <div class="pill-text"><span>Mentor</span><strong>John Doe</strong></div>
+                            </div> -->
+                            <div class="card-glass-bar">
+                                <div class="glass-info"><span class="label">6 Months</span><span class="value">3D
+                                        Animation</span></div>
+                                <a href="courses/3d-animation.html" class="glass-btn">MORE <i
+                                        class="ri-arrow-right-s-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="course-card">
+                            <img src="assets/img/courses/2d-animation-v2.png" alt="2D Animation">
+                            <!-- <div class="card-pill">
+                                <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Mentor">
+                                <div class="pill-text"><span>Mentor</span><strong>Lisa M.</strong></div>
+                            </div> -->
+                            <div class="card-glass-bar">
+                                <div class="glass-info"><span class="label">6 Months</span><span class="value">2D
+                                        Animation</span>
+                                </div>
+                                <a href="courses/2d-animation.html" class="glass-btn">MORE <i
+                                        class="ri-arrow-right-s-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="course-card">
+                            <img src="assets/img/courses/vfx.png" alt="Visual Effects (VFX)">
+                            <!-- <div class="card-pill">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mentor">
+                                <div class="pill-text"><span>Mentor</span><strong>Alex Rivera</strong></div>
+                            </div> -->
+                            <div class="card-glass-bar">
+                                <div class="glass-info"><span class="label">6 Months</span><span class="value">Visual
+                                        Effects (VFX)</span></div>
+                                <a href="courses/vfx.html" class="glass-btn">MORE <i
+                                        class="ri-arrow-right-s-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="course-card">
+                            <img src="assets/img/courses/game-dev.png" alt="Game Development">
+                            <!-- <div class="card-pill">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Mentor">
+                                <div class="pill-text"><span>Mentor</span><strong>Sarah Chen</strong></div>
+                            </div> -->
+                            <div class="card-glass-bar">
+                                <div class="glass-info"><span class="label">18 Months</span><span class="value">Game
+                                        Development</span></div>
+                                <a href="courses/game-development.html" class="glass-btn">MORE <i
+                                        class="ri-arrow-right-s-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="course-card">
+                            <img src="assets/img/courses/motion-graphics-v2.png" alt="Motion Graphics">
+                            <!-- <div class="card-pill">
+                                <img src="https://randomuser.me/api/portraits/men/86.jpg" alt="Mentor">
+                                <div class="pill-text"><span>Mentor</span><strong>Davide B.</strong></div>
+                            </div> -->
+                            <div class="card-glass-bar">
+                                <div class="glass-info"><span class="label">6 Months</span><span class="value">Motion
+                                        Graphics</span>
+                                </div>
+                                <a href="courses/motion-graphics.html" class="glass-btn">MORE <i
+                                        class="ri-arrow-right-s-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="course-card">
+                            <img src="assets/img/courses/web-design.png" alt="Web Designing">
+                            <!-- <div class="card-pill">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Mentor">
+                                <div class="pill-text"><span>Mentor</span><strong>Elena K.</strong></div>
+                            </div> -->
+                            <div class="card-glass-bar">
+                                <div class="glass-info"><span class="label">24 Months</span><span class="value">Web
+                                        Designing</span></div>
+                                <a href="courses/web-designing.html" class="glass-btn">MORE <i
+                                        class="ri-arrow-right-s-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="course-card">
+                            <img src="assets/img/courses/short-term.png" alt="Short Term Course">
+                            <!-- <div class="card-pill">
+                                <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Mentor">
+                                <div class="pill-text"><span>Mentor</span><strong>John Doe</strong></div>
+                            </div> -->
+                            <div class="card-glass-bar">
+                                <div class="glass-info"><span class="label">8 Months</span><span class="value">Short
+                                        Term Course</span></div>
+                                <a href="courses/short-term.html" class="glass-btn">MORE <i
+                                        class="ri-arrow-right-s-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="course-card">
+                            <img src="assets/img/courses/broadcasting.png" alt="Broadcasting">
+                            <!-- <div class="card-pill">
+                                <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Mentor">
+                                <div class="pill-text"><span>Mentor</span><strong>Lisa M.</strong></div>
+                            </div> -->
+                            <div class="card-glass-bar">
+                                <div class="glass-info"><span class="label">10 Months</span><span
+                                        class="value">Broadcasting</span>
+                                </div>
+                                <a href="courses/broadcasting.html" class="glass-btn">MORE <i
+                                        class="ri-arrow-right-s-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose area Section -->
+    <section id="why-us" class="why-section">
+        <div class="why-bg-glow"></div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-5 col-md-12 relative-wrapper">
+                    <div class="why-sticky-content">
+                        <div class="animate-on-scroll">
+                            <div class="hero-badge-container animate-on-scroll">
+                                <div class="hero-badge">
+                                    <span class="badge-dot"></span>
+                                    <span>The Arena Advantage</span>
+                                </div>
+                            </div>
+
+                            <h2 class="why-title">
+                                WHY THE <br>
+                                <span class="gradient-text">INDUSTRY</span> <br>
+                                HIRES US
+                            </h2>
+
+                            <p class="why-desc">
+                                We don't just teach software. We cultivate the mindset of a creator.
+                                From day one, you train on studio workflows with the same tech used in
+                                <span class="highlight-text">Marvel</span> & <span class="highlight-text">Disney</span>
+                                productions.
+                            </p>
+
+                            <div class="why-stats">
+                                <div class="mini-stat">
+                                    <span class="ms-num">97%</span>
+                                    <span class="ms-label">Placement Support</span>
+                                </div>
+                                <div class="mini-stat">
+                                    <span class="ms-num">1:1</span>
+                                    <span class="ms-label">Student Ratio</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 offset-lg-1 col-md-12">
+                    <div class="features-grid">
+
+                        <div class="feature-card animate-on-scroll">
+                            <div class="card-glow-effect"></div>
+                            <div class="card-border-line"></div>
+                            <div class="f-card-content">
+                                <div class="f-icon-box">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <div class="f-text">
+                                    <h3>Job Assistance</h3>
+                                    <p>Dedicated placement cell connecting you with top recruiters like DNEG, Prime
+                                        Focus, and Technicolor.</p>
+                                </div>
+                                <span class="f-number">01</span>
+                            </div>
+                        </div>
+
+                        <div class="feature-card animate-on-scroll" style="transition-delay: 0.1s;">
+                            <div class="card-glow-effect"></div>
+                            <div class="card-border-line"></div>
+                            <div class="f-card-content">
+                                <div class="f-icon-box">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <div class="f-text">
+                                    <h3>Studio Labs</h3>
+                                    <p>Train on high-end workstations with Wacom tablets. Learn the production pipeline
+                                        before you graduate.</p>
+                                </div>
+                                <span class="f-number">02</span>
+                            </div>
+                        </div>
+
+                        <div class="feature-card animate-on-scroll" style="transition-delay: 0.2s;">
+                            <div class="card-glow-effect"></div>
+                            <div class="card-border-line"></div>
+                            <div class="f-card-content">
+                                <div class="f-icon-box">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="f-text">
+                                    <h3>Global Edge</h3>
+                                    <p>Get certified by a brand recognized in 20 countries. Your Arena certificate is a
+                                        global passport.</p>
+                                </div>
+                                <span class="f-number">03</span>
+                            </div>
+                        </div>
+
+                        <div class="feature-card animate-on-scroll" style="transition-delay: 0.3s;">
+                            <div class="card-glow-effect"></div>
+                            <div class="card-border-line"></div>
+                            <div class="f-card-content">
+                                <div class="f-icon-box">
+                                    <i class="fas fa-vr-cardboard"></i>
+                                </div>
+                                <div class="f-text">
+                                    <h3>Future Tech</h3>
+                                    <p>Modules on AR/VR, Metaverse, and AI-assisted art tools to keep you ahead of the
+                                        curve.</p>
+                                </div>
+                                <span class="f-number">04</span>
+                            </div>
+                        </div>
+                        <div class="feature-card animate-on-scroll">
+                            <div class="card-glow-effect"></div>
+                            <div class="card-border-line"></div>
+                            <div class="f-card-content">
+                                <div class="f-icon-box">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <div class="f-text">
+                                    <h3>Job Assistance</h3>
+                                    <p>Dedicated placement cell connecting you with top recruiters like DNEG, Prime
+                                        Focus, and Technicolor.</p>
+                                </div>
+                                <span class="f-number">01</span>
+                            </div>
+                        </div>
+
+                        <div class="feature-card animate-on-scroll" style="transition-delay: 0.1s;">
+                            <div class="card-glow-effect"></div>
+                            <div class="card-border-line"></div>
+                            <div class="f-card-content">
+                                <div class="f-icon-box">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <div class="f-text">
+                                    <h3>Studio Labs</h3>
+                                    <p>Train on high-end workstations with Wacom tablets. Learn the production pipeline
+                                        before you graduate.</p>
+                                </div>
+                                <span class="f-number">02</span>
+                            </div>
+                        </div>
+
+                        <div class="feature-card animate-on-scroll" style="transition-delay: 0.2s;">
+                            <div class="card-glow-effect"></div>
+                            <div class="card-border-line"></div>
+                            <div class="f-card-content">
+                                <div class="f-icon-box">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="f-text">
+                                    <h3>Global Edge</h3>
+                                    <p>Get certified by a brand recognized in 20 countries. Your Arena certificate is a
+                                        global passport.</p>
+                                </div>
+                                <span class="f-number">03</span>
+                            </div>
+                        </div>
+
+                        <div class="feature-card animate-on-scroll" style="transition-delay: 0.3s;">
+                            <div class="card-glow-effect"></div>
+                            <div class="card-border-line"></div>
+                            <div class="f-card-content">
+                                <div class="f-icon-box">
+                                    <i class="fas fa-vr-cardboard"></i>
+                                </div>
+                                <div class="f-text">
+                                    <h3>Future Tech</h3>
+                                    <p>Modules on AR/VR, Metaverse, and AI-assisted art tools to keep you ahead of the
+                                        curve.</p>
+                                </div>
+                                <span class="f-number">04</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Showcase Section -->
+    <section id="student-showcase" class="showcase-section">
+        <div class="showcase-bg-grid"></div>
+
+        <div class="container">
+
+            <div class="section-header text-center mb-5">
+                <div class="hero-badge-container animate-on-scroll">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span>See What's Possible</span>
+                    </div>
+                </div>
+                <h2 class="showcase-title">
+                    Student <span class="highlight-stroke">Hall of Fame</span>
+                </h2>
+            </div>
+
+            <div class="swiper showcase-swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="work-card">
+                            <div class="award-badge">
+                                <i class="fas fa-trophy"></i>
+                                <span>Best VFX 2025</span>
+                            </div>
+
+                            <div class="work-image-box">
+                                <img src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?q=80&w=1000&auto=format&fit=crop"
+                                    alt="VFX Project">
+                                <a href="#" class="view-btn-overlay"></a>
+                            </div>
+
+                            <div class="work-content">
+                                <div>
+                                    <h3 class="project-title">Cyber City 2099</h3>
+                                    <span class="project-cat">VFX Composition</span>
+                                </div>
+                                <div class="student-info">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="student-avatar"
+                                        alt="Student">
+                                    <div class="student-details">
+                                        <span class="student-name">Arjun Mehta</span>
+                                        <span class="student-course">VFX Prime</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="work-card">
+                            <div class="award-badge cyan-badge">
+                                <i class="fas fa-star"></i>
+                                <span>Editor's Choice</span>
+                            </div>
+
+                            <div class="work-image-box">
+                                <img src="https://images.unsplash.com/photo-1616499370260-485b3e5ed653?q=80&w=1000&auto=format&fit=crop"
+                                    alt="3D Character">
+                                <a href="#" class="view-btn-overlay"></a>
+                            </div>
+
+                            <div class="work-content">
+                                <div>
+                                    <h3 class="project-title">Mecha Guardian</h3>
+                                    <span class="project-cat" style="color: #00f0ff;">3D Character Design</span>
+                                </div>
+                                <div class="student-info">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" class="student-avatar"
+                                        alt="Student">
+                                    <div class="student-details">
+                                        <span class="student-name">Sarah Khan</span>
+                                        <span class="student-course">Animation Prime</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="work-card">
+                            <div class="award-badge purple-badge">
+                                <i class="fas fa-gamepad"></i>
+                                <span>Best Gameplay</span>
+                            </div>
+
+                            <div class="work-image-box">
+                                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1000&auto=format&fit=crop"
+                                    alt="Game Level">
+                                <a href="#" class="view-btn-overlay"></a>
+                            </div>
+
+                            <div class="work-content">
+                                <div>
+                                    <h3 class="project-title">Lost Horizon</h3>
+                                    <span class="project-cat" style="color: #8338ec;">Level Design (UE5)</span>
+                                </div>
+                                <div class="student-info">
+                                    <img src="https://randomuser.me/api/portraits/women/65.jpg" class="student-avatar"
+                                        alt="Student">
+                                    <div class="student-details">
+                                        <span class="student-name">Priya Singh</span>
+                                        <span class="student-course">Gaming AR/VR</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="work-card">
+                            <div class="work-image-box">
+                                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1000&auto=format&fit=crop"
+                                    alt="Motion Graphics">
+                                <a href="#" class="view-btn-overlay"></a>
+                            </div>
+
+                            <div class="work-content">
+                                <div>
+                                    <h3 class="project-title">Retro Wave</h3>
+                                    <span class="project-cat">Motion Graphics</span>
+                                </div>
+                                <div class="student-info">
+                                    <img src="https://randomuser.me/api/portraits/men/86.jpg" class="student-avatar"
+                                        alt="Student">
+                                    <div class="student-details">
+                                        <span class="student-name">Vikram Das</span>
+                                        <span class="student-course">VFX Composer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-card">
+                            <div class="award-badge">
+                                <i class="fas fa-trophy"></i>
+                                <span>Best VFX 2025</span>
+                            </div>
+
+                            <div class="work-image-box">
+                                <img src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?q=80&w=1000&auto=format&fit=crop"
+                                    alt="VFX Project">
+                                <a href="#" class="view-btn-overlay"></a>
+                            </div>
+
+                            <div class="work-content">
+                                <div>
+                                    <h3 class="project-title">Cyber City 2099</h3>
+                                    <span class="project-cat">VFX Composition</span>
+                                </div>
+                                <div class="student-info">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="student-avatar"
+                                        alt="Student">
+                                    <div class="student-details">
+                                        <span class="student-name">Arjun Mehta</span>
+                                        <span class="student-course">VFX Prime</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="work-card">
+                            <div class="award-badge cyan-badge">
+                                <i class="fas fa-star"></i>
+                                <span>Editor's Choice</span>
+                            </div>
+
+                            <div class="work-image-box">
+                                <img src="https://images.unsplash.com/photo-1616499370260-485b3e5ed653?q=80&w=1000&auto=format&fit=crop"
+                                    alt="3D Character">
+                                <a href="#" class="view-btn-overlay"></a>
+                            </div>
+
+                            <div class="work-content">
+                                <div>
+                                    <h3 class="project-title">Mecha Guardian</h3>
+                                    <span class="project-cat" style="color: #00f0ff;">3D Character Design</span>
+                                </div>
+                                <div class="student-info">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" class="student-avatar"
+                                        alt="Student">
+                                    <div class="student-details">
+                                        <span class="student-name">Sarah Khan</span>
+                                        <span class="student-course">Animation Prime</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="work-card">
+                            <div class="award-badge purple-badge">
+                                <i class="fas fa-gamepad"></i>
+                                <span>Best Gameplay</span>
+                            </div>
+
+                            <div class="work-image-box">
+                                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1000&auto=format&fit=crop"
+                                    alt="Game Level">
+                                <a href="#" class="view-btn-overlay"></a>
+                            </div>
+
+                            <div class="work-content">
+                                <div>
+                                    <h3 class="project-title">Lost Horizon</h3>
+                                    <span class="project-cat" style="color: #8338ec;">Level Design (UE5)</span>
+                                </div>
+                                <div class="student-info">
+                                    <img src="https://randomuser.me/api/portraits/women/65.jpg" class="student-avatar"
+                                        alt="Student">
+                                    <div class="student-details">
+                                        <span class="student-name">Priya Singh</span>
+                                        <span class="student-course">Gaming AR/VR</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="work-card">
+                            <div class="work-image-box">
+                                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1000&auto=format&fit=crop"
+                                    alt="Motion Graphics">
+                                <a href="#" class="view-btn-overlay"></a>
+                            </div>
+
+                            <div class="work-content">
+                                <div>
+                                    <h3 class="project-title">Retro Wave</h3>
+                                    <span class="project-cat">Motion Graphics</span>
+                                </div>
+                                <div class="student-info">
+                                    <img src="https://randomuser.me/api/portraits/men/86.jpg" class="student-avatar"
+                                        alt="Student">
+                                    <div class="student-details">
+                                        <span class="student-name">Vikram Das</span>
+                                        <span class="student-course">VFX Composer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Section -->
+    <section id="careers" class="careers-section">
+        <div class="careers-bg">
+            <div class="careers-grid-network"></div>
+            <!-- <div class="careers-glow-orb"></div> -->
+        </div>
+
+        <div class="container relative-z">
+            <!-- <div class="careers-header animate-on-scroll">
+                <div class="h-shutter left"></div>
+                <div class="h-shutter right"></div>
+                <h2 class="holo-title">
+                    <span class="glitch-text" data-text="CAREER">CAREER</span>
+                    <span class="gradient-text">MASTERY</span>
+                </h2>
+                <div class="holo-subtitle">
+                    <span class="bracket">[</span>
+                    LEVEL UP YOUR FUTURE
+                    <span class="bracket">]</span>
+                </div>
+                <p class="careers-desc">
+                    Join the ranks of elite creators at top global studios. Your skills are the currency of the
+                    metaverse.
+                </p>
+            </div> -->
+
+            <div class="holo-grid-wrapper">
+
+                <!-- Stat Card 1 -->
+                <div class="holo-card animate-on-scroll">
+                    <div class="card-corner topleft"></div>
+                    <div class="card-corner topright"></div>
+                    <div class="card-corner bottomleft"></div>
+                    <div class="card-corner bottomright"></div>
+
+                    <div class="holo-content">
+                        <div class="holo-icon">
+                            <i class="fas fa-crosshairs"></i>
+                        </div>
+                        <div class="holo-data">
+                            <span class="data-value scramble-text" data-target="96%">0%</span>
+                            <span class="data-label">PLACEMENT SUCCESS</span>
+                        </div>
+                        <div class="holo-bar">
+                            <div class="bar-fill" style="width: 96%"></div>
+                        </div>
+                    </div>
+                    <div class="card-scanline"></div>
+                </div>
+
+                <!-- Stat Card 2 -->
+                <div class="holo-card animate-on-scroll" style="transition-delay: 0.1s;">
+                    <div class="card-corner topleft"></div>
+                    <div class="card-corner topright"></div>
+                    <div class="card-corner bottomleft"></div>
+                    <div class="card-corner bottomright"></div>
+
+                    <div class="holo-content">
+                        <div class="holo-icon">
+                            <i class="fas fa-stopwatch"></i>
+                        </div>
+                        <div class="holo-data">
+                            <span class="data-value scramble-text" data-target="85%">0%</span>
+                            <span class="data-label">HIRED IN 3 MONTHS</span>
+                        </div>
+                        <div class="holo-bar">
+                            <div class="bar-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="card-scanline"></div>
+                </div>
+
+                <!-- Stat Card 3 -->
+                <div class="holo-card animate-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="card-corner topleft"></div>
+                    <div class="card-corner topright"></div>
+                    <div class="card-corner bottomleft"></div>
+                    <div class="card-corner bottomright"></div>
+
+                    <div class="holo-content">
+                        <div class="holo-icon">
+                            <i class="fas fa-rupee-sign"></i>
+                        </div>
+                        <div class="holo-data">
+                            <span class="data-value scramble-text" data-target="8L+">0</span>
+                            <span class="data-label">NOT JUST A SALARY</span>
+                        </div>
+                        <div class="holo-bar">
+                            <div class="bar-fill" style="width: 78%"></div>
+                        </div>
+                    </div>
+                    <div class="card-scanline"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="tech-pattern-bg"></div>
+
+        <div class="container">
+            <div class="section-header">
+                <div class="hero-badge-container animate-on-scroll">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span>Real Stories. Real Careers.</span>
+                    </div>
+                </div>
+                <h2 class="testi-title">
+                    Student <span class="gradient-text">Voices</span>
+                </h2>
+            </div>
+
+            <div class="swiper testimonial-swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="testi-card">
+                            <div class="card-accent-line" style="background: linear-gradient(90deg, #00f0ff, #0044ff);">
+                            </div>
+                            <div class="bg-quote-icon"><i class="fas fa-quote-right"></i></div>
+
+                            <div class="testi-header">
+                                <div class="user-avatar-box">
+                                    <img src="https://randomuser.me/api/portraits/men/45.jpg" class="user-avatar"
+                                        alt="User">
+                                    <div class="verified-badge"><i class="fas fa-check"></i></div>
+                                </div>
+                                <div class="user-info">
+                                    <h4>Rohan Das</h4>
+                                    <span>VFX Prime (Batch 2024)</span>
+                                </div>
+                            </div>
+
+                            <div class="testi-body">
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="testi-text">
+                                    "The studio-like environment at Arena gave me the confidence to handle real
+                                    production pipelines. The faculty's industry experience was a game-changer for my
+                                    portfolio."
+                                </p>
+                            </div>
+
+                            <div class="testi-footer">
+                                <span class="placed-label">Placed At</span>
+                                <span class="company-badge dneg">DNEG</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testi-card">
+                            <div class="card-accent-line" style="background: linear-gradient(90deg, #FFE01A, #ff8800);">
+                            </div>
+                            <div class="bg-quote-icon"><i class="fas fa-quote-right"></i></div>
+
+                            <div class="testi-header">
+                                <div class="user-avatar-box">
+                                    <img src="https://randomuser.me/api/portraits/women/63.jpg" class="user-avatar"
+                                        alt="User">
+                                    <div class="verified-badge"><i class="fas fa-check"></i></div>
+                                </div>
+                                <div class="user-info">
+                                    <h4>Priya Sharma</h4>
+                                    <span>Animation Prime</span>
+                                </div>
+                            </div>
+
+                            <div class="testi-body">
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="testi-text">
+                                    "From sketching to rigging 3D characters, the journey was intense but rewarding. The
+                                    placement cell helped me land my dream job right after my final project."
+                                </p>
+                            </div>
+
+                            <div class="testi-footer">
+                                <span class="placed-label">Placed At</span>
+                                <span class="company-badge mpc">MPC</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testi-card">
+                            <div class="card-accent-line" style="background: linear-gradient(90deg, #DF3131, #800000);">
+                            </div>
+                            <div class="bg-quote-icon"><i class="fas fa-quote-right"></i></div>
+
+                            <div class="testi-header">
+                                <div class="user-avatar-box">
+                                    <img src="https://randomuser.me/api/portraits/men/22.jpg" class="user-avatar"
+                                        alt="User">
+                                    <div class="verified-badge"><i class="fas fa-check"></i></div>
+                                </div>
+                                <div class="user-info">
+                                    <h4>Amit Verma</h4>
+                                    <span>Gaming AR/VR</span>
+                                </div>
+                            </div>
+
+                            <div class="testi-body">
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="testi-text">
+                                    "Learning Unreal Engine 5 here put me miles ahead of others. The hands-on labs and
+                                    VR testing kits allowed me to build a fully playable game level."
+                                </p>
+                            </div>
+
+                            <div class="testi-footer">
+                                <span class="placed-label">Placed At</span>
+                                <span class="company-badge tech">Technicolor</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testi-card">
+                            <div class="card-accent-line" style="background: linear-gradient(90deg, #8338ec, #ff006e);">
+                            </div>
+                            <div class="bg-quote-icon"><i class="fas fa-quote-right"></i></div>
+
+                            <div class="testi-header">
+                                <div class="user-avatar-box">
+                                    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="user-avatar"
+                                        alt="User">
+                                    <div class="verified-badge"><i class="fas fa-check"></i></div>
+                                </div>
+                                <div class="user-info">
+                                    <h4>Sneha Roy</h4>
+                                    <span>Graphics & Web</span>
+                                </div>
+                            </div>
+
+                            <div class="testi-body">
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="testi-text">
+                                    "I learned not just tools but design thinking. The portfolio development sessions
+                                    were crucial in helping me secure a position at a top digital agency."
+                                </p>
+                            </div>
+
+                            <div class="testi-footer">
+                                <span class="placed-label">Placed At</span>
+                                <span class="company-badge dneg">Ogilvy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="portal-cta-section">
+        <div class="portal-grid-floor"></div>
+        <div class="portal-overlay-vignette"></div>
+
+        <div class="container position-relative z-2">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+
+                    <div class="cta-badge-wrapper">
+                        <span class="cta-badge">Join Our Creative World</span>
+                    </div>
+
+                    <h2 class="portal-title">
+                        <span class="outline-layer">DON'T JUST PLAY</span>
+                        <br>
+                        <span class="solid-layer glitch-effect" data-text="CREATE THE GAME">CREATE THE GAME</span>
+                    </h2>
+
+                    <p class="portal-desc">
+                        Your career in the metaverse awaits. Secure your seat in the industry's most advanced Animation
+                        & VFX program.
+                    </p>
+
+                    <div class="portal-actions">
+                        <a href="#enroll" class="btn-cyber-glitch">
+                            <span class="btn-text">ENROLL NOW</span>
+                            <span class="btn-shards"></span>
+                        </a>
+                        <a href="#" class="btn-link-simple">
+                            <span>Download Brochure</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer Component Container -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

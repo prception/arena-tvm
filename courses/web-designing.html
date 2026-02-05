@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Designing | Arena Animation</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Visual Effects -->
+    <div class="scanlines"></div>
+    <!-- <div class="vignette"></div> -->
+    <div class="particle-blur-overlay-2"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <div id="header-container"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="course-hero">
+            <div class="grid-overlay"></div>
+
+            <div class="hero-floating-shapes">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 course-hero-content">
+                        <div class="course-badge">
+                            <span class="dot"></span>
+                            <span>Career Program</span>
+                        </div>
+                        <h1 class="course-title">
+                            <span class="glitch-effect">Learn</span><br>
+                            <span class="gradient-text">Web Designing</span>
+                        </h1>
+                        <p class="course-subtitle">
+                            Web designing is a creative career, highly in demand. Design websites
+                            that are easy to use and fun to look at with industry-standard tools.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="course-content-section">
+            <div class="container">
+                <!-- Main Content Row -->
+                <div class="row g-5 align-items-center mb-5">
+                    <div class="col-lg-6">
+                        <div class="content-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=800&auto=format&fit=crop"
+                                alt="Web Design Workspace" class="content-main-image">
+                            <div class="image-accent-border"></div>
+                            <div class="image-glow"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <span class="section-label">About This Course</span>
+                        <h2 class="content-title">
+                            A <span class="gradient-text">Creative Career</span> In High Demand
+                        </h2>
+                        <p class="content-text">
+                            As Internet usage keeps increasing, more and more businesses want their own websites. Web
+                            designers come up with out-of-the-box design ideas and use software & high-end technology to
+                            design websites that are easy to use & fun to look at.
+                        </p>
+                        <p class="content-text">
+                            A career in web designing is exciting, as every new project brings new challenges and
+                            involves a lot of creative thinking. Trained & certified web designers earn a high salary,
+                            especially with a few years of experience in hand.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature Highlights -->
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="feature-highlight-card">
+                            <div class="feature-icon-box">
+                                <i class="ri-layout-4-fill"></i>
+                            </div>
+                            <h4>GWDD</h4>
+                            <p>Graphics, Web Design & Development</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-highlight-card">
+                            <div class="feature-icon-box">
+                                <i class="ri-printer-fill"></i>
+                            </div>
+                            <h4>Print & Publishing</h4>
+                            <p>Professional Print Design Skills</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-highlight-card">
+                            <div class="feature-icon-box">
+                                <i class="ri-message-3-fill"></i>
+                            </div>
+                            <h4>DCD</h4>
+                            <p>Digital Communication Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Content Row -->
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="content-image-wrapper secondary">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop"
+                                alt="Coding on Laptop" class="content-main-image">
+                            <div class="image-accent-border"></div>
+                            <div class="image-glow secondary"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <span class="section-label">What You'll Learn</span>
+                        <h2 class="content-title">
+                            Master <span class="gradient-text">Modern Web Technologies</span>
+                        </h2>
+                        <p class="content-text">
+                            Learn the technical skills to design visually appealing and user-friendly websites with
+                            Arena Web Design program. Become skilled at using HTML5, CSS3, JavaScript, jQuery,
+                            Dreamweaver & more!
+                        </p>
+                        <p class="content-text">
+                            Build a career in web designing, graphics, or print & publishing. Our comprehensive
+                            curriculum covers everything from responsive design principles to interactive web elements,
+                            preparing you for the modern digital landscape.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Software Section -->
+        <section class="software-section">
+            <div class="container">
+                <h2 class="software-section-title">
+                    Technologies <span class="gradient-text">You'll Master</span>
+                </h2>
+
+                <div class="software-grid">
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-html5-fill"></i>
+                        </div>
+                        <h3 class="software-name">HTML5</h3>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-css3-fill"></i>
+                        </div>
+                        <h3 class="software-name">CSS3</h3>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-javascript-fill"></i>
+                        </div>
+                        <h3 class="software-name">JavaScript</h3>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-code-s-slash-fill"></i>
+                        </div>
+                        <h3 class="software-name">jQuery</h3>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-global-fill"></i>
+                        </div>
+                        <h3 class="software-name">Dreamweaver</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to <span class="gradient-text">Start Your Journey?</span></h2>
+                    <p class="cta-text">
+                        Join thousands of successful web designers who launched their careers with Arena Animation.
+                    </p>
+                    <a href="../contact.html" class="btn-cta">
+                        <span>Enroll Now</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

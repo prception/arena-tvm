@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion Graphics | Arena Animation</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Visual Effects -->
+    <div class="scanlines"></div>
+    <!-- <div class="vignette"></div> -->
+    <div class="particle-blur-overlay-2"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <div id="header-container"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="course-hero">
+            <div class="grid-overlay"></div>
+
+            <div class="hero-floating-shapes">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 course-hero-content">
+                        <div class="course-badge">
+                            <span class="dot"></span>
+                            <span>Career Program</span>
+                        </div>
+                        <h1 class="course-title">
+                            <span class="glitch-effect">Learn</span><br>
+                            <span class="gradient-text">Motion Graphics</span>
+                        </h1>
+                        <p class="course-subtitle">
+                            Bring static designs to life with captivating animations.
+                            Master the art of motion graphics for film, television, and digital media.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="course-content-section">
+            <div class="container">
+                <!-- Main Content Row -->
+                <div class="row g-5 align-items-center mb-5">
+                    <div class="col-lg-6">
+                        <div class="content-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551503766-ac63dfa6401c?q=80&w=800&auto=format&fit=crop"
+                                alt="Motion Graphics Design" class="content-main-image">
+                            <div class="image-accent-border"></div>
+                            <div class="image-glow"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <span class="section-label">About This Course</span>
+                        <h2 class="content-title">
+                            The Art of <span class="gradient-text">Moving Graphics</span>
+                        </h2>
+                        <p class="content-text">
+                            Motion graphics is the art of bringing graphic design elements to life through animation. It
+                            combines principles of graphic design with animation techniques to create engaging visual
+                            content for videos, advertisements, title sequences, and user interfaces.
+                        </p>
+                        <p class="content-text">
+                            From animated logos and infographics to complex visual effects and broadcast graphics,
+                            motion graphics artists are in high demand across advertising, film, television, and digital
+                            media industries.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature Highlights -->
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="feature-highlight-card">
+                            <div class="feature-icon-box">
+                                <i class="ri-movie-fill"></i>
+                            </div>
+                            <h4>Title Sequences</h4>
+                            <p>Create cinematic opening titles</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-highlight-card">
+                            <div class="feature-icon-box">
+                                <i class="ri-advertisement-fill"></i>
+                            </div>
+                            <h4>Commercial Ads</h4>
+                            <p>Design impactful advertisements</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-highlight-card">
+                            <div class="feature-icon-box">
+                                <i class="ri-tv-2-fill"></i>
+                            </div>
+                            <h4>Broadcast Design</h4>
+                            <p>Television & streaming graphics</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Content Row -->
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="content-image-wrapper secondary">
+                            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=800&auto=format&fit=crop"
+                                alt="Animation Workflow" class="content-main-image">
+                            <div class="image-accent-border"></div>
+                            <div class="image-glow secondary"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <span class="section-label">What You'll Learn</span>
+                        <h2 class="content-title">
+                            Professional <span class="gradient-text">Animation Skills</span>
+                        </h2>
+                        <p class="content-text">
+                            Learn keyframe animation, timing and easing, typography animation, shape layer techniques,
+                            and advanced compositing. Master the principles of motion design that make animations feel
+                            natural and engaging.
+                        </p>
+                        <p class="content-text">
+                            Our curriculum covers everything from kinetic typography and logo animations to complex
+                            particle systems and 3D integration. Build a professional demo reel that showcases your
+                            creative abilities to potential employers.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Third Content Row -->
+                <div class="row g-5 align-items-center mt-5">
+                    <div class="col-lg-6">
+                        <div class="content-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop"
+                                alt="Digital Content Creation" class="content-main-image">
+                            <div class="image-accent-border"></div>
+                            <div class="image-glow"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <span class="section-label">Career Opportunities</span>
+                        <h2 class="content-title">
+                            High-Demand <span class="gradient-text">Creative Career</span>
+                        </h2>
+                        <p class="content-text">
+                            Motion graphics artists work in advertising agencies, production studios, television
+                            networks, and digital marketing companies. With the rise of online video content, demand for
+                            skilled motion designers has never been higher.
+                        </p>
+                        <p class="content-text">
+                            Graduates can pursue careers as Motion Graphics Designers, Video Editors, Broadcast
+                            Designers, Visual Effects Artists, or freelance content creators. The skills you learn are
+                            transferable across multiple creative industries.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Software Section -->
+        <section class="software-section">
+            <div class="container">
+                <h2 class="software-section-title">
+                    Softwares <span class="gradient-text">You'll Master</span>
+                </h2>
+
+                <div class="software-grid">
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-magic-fill"></i>
+                        </div>
+                        <h3 class="software-name">After Effects</h3>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-film-fill"></i>
+                        </div>
+                        <h3 class="software-name">Premiere Pro</h3>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-box-3-fill"></i>
+                        </div>
+                        <h3 class="software-name">Cinema 4D</h3>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">
+                            <i class="ri-pen-nib-fill"></i>
+                        </div>
+                        <h3 class="software-name">Illustrator</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to <span class="gradient-text">Start Your Journey?</span></h2>
+                    <p class="cta-text">
+                        Join thousands of successful motion designers who launched their careers with Arena Animation.
+                    </p>
+                    <a href="../contact.html" class="btn-cta">
+                        <span>Enroll Now</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
