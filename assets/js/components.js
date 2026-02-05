@@ -41,6 +41,11 @@
                 return response.text();
             })
             .then(html => {
+                // Fix relative paths if we are in a subdirectory
+                if (basePath && basePath !== '') {
+                    html = html.replace(/(href|src)="((?!http|#|mailto|\/).*?)"/g, '$1="' + basePath + '$2"');
+                }
+
                 container.innerHTML = html;
 
                 if (containerId === 'header-container') {
