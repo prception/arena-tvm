@@ -338,13 +338,13 @@ function initThreeJS() {
 
         const logoCount = points.length;
 
-        // --- Scattered background particles ---
+        // --- Scattered background particles (spread wide so they appear sparse) ---
         const scatterCount = count - logoCount;
         for (let i = 0; i < scatterCount; i++) {
             points.push({
-                x: (Math.random() - 0.5) * 40,
-                y: (Math.random() - 0.5) * 28,
-                z: (Math.random() - 0.5) * 20 - 5,
+                x: (Math.random() - 0.5) * 120,
+                y: (Math.random() - 0.5) * 80,
+                z: (Math.random() - 0.5) * 60 - 15,
                 isLogo: false
             });
         }
@@ -473,9 +473,9 @@ function initThreeJS() {
         const scatterNeeded = count - controllerCount;
         for (let i = 0; i < scatterNeeded; i++) {
             points.push({
-                x: (Math.random() - 0.5) * 40,
-                y: (Math.random() - 0.5) * 28,
-                z: (Math.random() - 0.5) * 20 - 5
+                x: (Math.random() - 0.5) * 120,
+                y: (Math.random() - 0.5) * 80,
+                z: (Math.random() - 0.5) * 60 - 15
             });
         }
 
@@ -692,13 +692,13 @@ function initThreeJS() {
 
         const monitorCount = points.length;
 
-        // --- Scattered background particles ---
+        // --- Scattered background particles (spread wide so they appear sparse) ---
         const scatterCount = count - monitorCount;
         for (let i = 0; i < scatterCount; i++) {
             points.push({
-                x: (Math.random() - 0.5) * 50,
-                y: (Math.random() - 0.5) * 35,
-                z: (Math.random() - 0.5) * 25 - 8
+                x: (Math.random() - 0.5) * 120,
+                y: (Math.random() - 0.5) * 80,
+                z: (Math.random() - 0.5) * 60 - 15
             });
         }
 
@@ -915,13 +915,13 @@ function initThreeJS() {
 
         const rocketCount = points.length;
 
-        // --- Scattered background particles (widely distributed) ---
+        // --- Scattered background particles (spread wide so they appear sparse) ---
         const scatterCount = count - rocketCount;
         for (let i = 0; i < scatterCount; i++) {
             points.push({
-                x: (Math.random() - 0.5) * 80,  // horizontal spread
-                y: (Math.random() - 0.5) * 35,  // vertical spread
-                z: (Math.random() - 0.5) * 50 - 8  // z spread
+                x: (Math.random() - 0.5) * 140,
+                y: (Math.random() - 0.5) * 90,
+                z: (Math.random() - 0.5) * 65 - 15
             });
         }
 
@@ -1516,17 +1516,19 @@ function initThreeJS() {
 function initScrollAnimations() {
     gsap.registerPlugin(ScrollTrigger);
 
-    // Pinning for Why Us Section (Left Side Sticky)
-    ScrollTrigger.create({
-        trigger: ".why-section",
-        start: "top top",
-        end: "bottom bottom",
-        pin: ".why-sticky-content",
-        pinSpacing: false,
-        getBoundingClientRect() {
-            return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
-        }
-    });
+    // Pinning for Why Us Section (Left Side Sticky) - only on large screens
+    if (window.innerWidth > 991) {
+        ScrollTrigger.create({
+            trigger: ".why-section",
+            start: "top top",
+            end: "bottom bottom",
+            pin: ".why-sticky-content",
+            pinSpacing: false,
+            getBoundingClientRect() {
+                return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+            }
+        });
+    }
 
     // Hero reveal
     gsap.timeline({ delay: 0.3 }).to('.hero-section .animate-on-scroll', {
