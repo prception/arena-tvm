@@ -1011,6 +1011,7 @@ function initThreeJS() {
     // MOUSE INTERACTION (throttled for performance)
     // ============================================
     let mouse = { x: 0, y: 0 };
+    let smoothMouse = { x: 0, y: 0 }; // Smoothed mouse for camera parallax
     let mouseWorld = new THREE.Vector3();
     const raycaster = new THREE.Raycaster();
     const plane = new THREE.Plane(new THREE.Vector3(0, 0, 1), 0);
@@ -1170,8 +1171,17 @@ function initThreeJS() {
 
         mesh.instanceMatrix.needsUpdate = true;
 
-        // Subtle mesh rotation
-        mesh.rotation.y = Math.sin(time * 0.06) * 0.02;
+        // Smooth mouse interpolation for camera parallax
+        smoothMouse.x += (mouse.x - smoothMouse.x) * 0.04;
+        smoothMouse.y += (mouse.y - smoothMouse.y) * 0.04;
+
+        // Camera parallax rotation — creates hollow 3D space feel
+        camera.rotation.y = -smoothMouse.x * 0.08;
+        camera.rotation.x = smoothMouse.y * 0.05;
+
+        // Subtle mesh counter-rotation for enhanced depth
+        mesh.rotation.y = smoothMouse.x * 0.03 + Math.sin(time * 0.06) * 0.02;
+        mesh.rotation.x = -smoothMouse.y * 0.02;
 
         renderer.render(scene, camera);
     }
