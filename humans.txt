@@ -1,0 +1,18 @@
+/* TEAM */
+
+Designer & Developer: Mohammed Nihal
+LinkedIn: https://www.linkedin.com/in/m-nihal13
+GitHub: https://github.com/mnihal-13
+
+Design Studio: Prception
+Website: https://prception.in
+
+/* SITE */
+
+Site: Arena Animation Trivandrum
+URL: https://arenatrivandrum.com
+Location: Thiruvananthapuram, Kerala, India
+Standards: HTML5, CSS3, JavaScript
+Components: Bootstrap 5, GSAP, Swiper, Three.js, Lenis
+Fonts: Orbitron, Rajdhani (Google Fonts)
+Software: Visual Studio Code

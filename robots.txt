@@ -1,0 +1,15 @@
+# robots.txt for arenatrivandrum.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://arenatrivandrum.com/sitemap.xml
+
+# Disallow internal/dev pages
+Disallow: /structure.html
+Disallow: /components/
+
+# Disallow assets directories (not useful for indexing)
+Disallow: /assets/js/
+Disallow: /assets/css/

@@ -1,0 +1,36 @@
+# Arena Animation Trivandrum
+
+> Arena Animation Trivandrum is a premier creative education institute in Thiruvananthapuram, Kerala, India. Part of the Arena Animation network — Asia's largest animation and multimedia training provider with 25+ years of excellence and 450,000+ alumni globally.
+
+## About
+
+Arena Animation Trivandrum offers industry-relevant courses in Animation, VFX, Gaming, Web Design, Graphics Design, and Broadcasting. The institute bridges the gap between students and studio professionals through hands-on, industry-synced training. Located at Mahatma Gandhi Rd, opp. QRS Mall, Pulimoodu, Thiruvananthapuram.
+
+## Courses Offered
+
+- [Graphics Designing](https://arenatrivandrum.com/courses/graphics-designing.html): 6-month program covering fundamentals of design, typography, and visual communication using Adobe Photoshop, Illustrator, and InDesign.
+- [3D Animation](https://arenatrivandrum.com/courses/3d-animation.html): 6-month program teaching 3D modeling, character animation, and rendering using Maya and Blender.
+- [2D Animation](https://arenatrivandrum.com/courses/2d-animation.html): 6-month program combining classical animation techniques with modern digital tools like Adobe Animate and Toon Boom Harmony.
+- [Visual Effects (VFX)](https://arenatrivandrum.com/courses/vfx.html): 6-month program mastering compositing and special effects using Nuke and After Effects.
+- [Game Development](https://arenatrivandrum.com/courses/game-development.html): 18-month comprehensive program covering end-to-end game design, coding, and deployment using Unity and Unreal Engine.
+- [Motion Graphics](https://arenatrivandrum.com/courses/motion-graphics.html): 6-month program focused on dynamic motion design for advertising and broadcast using Cinema 4D and After Effects.
+- [Web Designing](https://arenatrivandrum.com/courses/web-designing.html): 24-month program teaching responsive web design, UI/UX, and front-end coding with HTML, CSS, and JavaScript.
+- [Short Term Courses](https://arenatrivandrum.com/courses/short-term.html): 8-month specialized skills upgrade programs for rapid career growth.
+- [Broadcasting](https://arenatrivandrum.com/courses/broadcasting.html): 10-month program covering production and post-production for Television and OTT using Premiere Pro and Final Cut Pro.
+
+## Key Pages
+
+- [Home](https://arenatrivandrum.com/): Main landing page with overview of programs, student showcase, and key statistics.
+- [About Us](https://arenatrivandrum.com/about.html): Institute history, vision, mission, training methodology, and infrastructure details.
+- [All Courses](https://arenatrivandrum.com/course.html): Complete course catalog with filtering by category (Animation, VFX, Gaming, Web, Broadcast).
+- [Gallery](https://arenatrivandrum.com/gallery.html): Student portfolio showcase featuring VFX, 3D animation, graphics, and game art projects.
+- [Contact](https://arenatrivandrum.com/contact.html): Contact form, location map, and communication details.
+
+## Contact
+
+- Address: Mahatma Gandhi Rd, opp. QRS Mall, Pulimoodu, Thiruvananthapuram
+- Phone: +91 92490 41234
+- Email: aamsgroup@gmail.com
+- Instagram: https://www.instagram.com/arena_tvm/
+- Facebook: https://www.facebook.com/arenatvm
+- Website: https://arenatrivandrum.com
